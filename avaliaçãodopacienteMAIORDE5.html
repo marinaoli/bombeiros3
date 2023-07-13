@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombeiros voluntários</title>
+</head>
+
+<style>
+  table {
+          border-collapse: collapse;
+        }
+        
+        table, th, td {
+          border: 1px solid rgb(255, 248, 149);
+          padding: 5px;
+        }
+
+        body{
+          background-color: maroon;
+        }
+</style>
+
+
+<body>
+
+    <img src="logo_pequena.png" style="position: relative; height: 90px; width: 90px; ">
+
+    <center>
+       <h1>AVALIAÇÃO DO PACIENTE 
+           <BR>(GLASGOW)</h1>
+    
+ <h2>
+    nivel de consciência
+ </h2>
+
+</center>
+<div class="principal">
+    
+    
+ 
+    </head>
+    <body >
+    
+      <table>
+        <tr>
+          <th></th>
+          <th>MAIORES DE 5 ANOS</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" id="checkboxA">ESPONTANÊA</td>
+        </tr>
+        <tr>
+          <td>ABERTURA OCULAR</td>
+          <td><input type="checkbox" id="checkboxA">COMANDO VERBAL</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" id="checkboxA">ESTÍMULO DOLOROSO</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" id="checkboxA">NENHUMA</td>
+          </tr> 
+
+        </table>
+
+
+        <table>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" id="checkboxA">ORIENTADO</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" id="checkboxA">CONFUSO</td>
+            </tr>
+            <tr>
+              <td>RESPOSTA VERBAL </td>
+              <td><input type="checkbox" id="checkboxA">PALAVRAS INAPROPIADAS</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="checkboxA">PALAVRAS INCOMPREENSÍVEIS</td>
+              </tr> 
+              <tr>
+                <td></td>
+                <td><input type="checkbox" id="checkboxA">NENHUMA</td>
+              </tr>
+            </table>
+    
+           
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="checkbox" id="checkboxA">OBEDECE COMANDOS</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="checkbox" id="checkboxA">LOCALIZA DOR </td>
+              </tr>
+              <tr>
+                <td>RESPOSTA MOTORA
+                </td>
+                <td><input type="checkbox" id="checkboxA">MOVIMENTO DE RETIRADA </td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td><input type="checkbox" id="checkboxA">FLEXÃO ANORMAL</td>
+                </tr> 
+                <tr>
+                  <td></td>
+                  <td><input type="checkbox" id="checkboxA">EXTENSÃO ANORMAL</td>
+                </tr>
+                <td></td>
+                <td><input type="checkbox" id="checkboxA">NENHUMA </td>
+              </tr>
+              </table>
+      
+              <button onclick="contarCheckboxes()">Contar</button>
+
+              <script>
+                function contarCheckboxes() {
+                  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                  var totalSelecionadas = 0;
+              
+                  for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].checked) {
+                      totalSelecionadas++;
+                    }
+                  }
+              
+                  alert("Total de checkboxes selecionadas: " + totalSelecionadas);
+                }
+              </script>
+    
+    
+</div>
+
+
+</body>
+</html>
